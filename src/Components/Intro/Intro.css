@@ -62,10 +62,31 @@
 }
 .i-right > :nth-child(2) {
   transform: scale(0.67);
-  left: -3rem;
+  left: -4rem;
   top: -4.6rem;
 }
 .i-right > :nth-child(3) {
-  transform: scale(0.8);
-  left: 28%;
+  transform: scale(0.7);
+  left: 10%;
+  top: -6rem;
+  border-radius: 10% 10%;
+}
+.i-right > :nth-child(4) {
+  transform: scale(0.6);
+  top: -19%;
+  left: -24%;
+  border-radius: 50%;
+  padding: 0;
+}
+.blur{
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  background-repeat: 50%;
+  background:#edd0ff;
+  filter:blur(212px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+
 }
