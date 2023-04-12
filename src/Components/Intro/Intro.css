@@ -84,9 +84,8 @@
   height: 14rem;
   background-repeat: 50%;
   background:#edd0ff;
-  filter:blur(212px);
+  filter:blur(72px);
   z-index: -9;
   top: -18%;
   left: 56%;
-
 }

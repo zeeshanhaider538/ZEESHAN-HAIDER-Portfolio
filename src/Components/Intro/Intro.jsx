@@ -24,29 +24,48 @@ const Intro = () => {
         </div>
         <button className=" button i-button">Hire Me</button>
         <div className="i-icons">
-          <a href="https://github.com/zeeshanhaider538" target={"_blank"} alt="github">
+          <a
+            href="https://github.com/zeeshanhaider538"
+            target={"_blank"}
+            alt="github"
+          >
             <img src={Github} alt="github"></img>
           </a>
-          <a href="https://www.linkedin.com/in/zeeshan-haider-/" target={"_blank"} alt="Linkedin">
+          <a
+            href="https://www.linkedin.com/in/zeeshan-haider-/"
+            target={"_blank"}
+            alt="Linkedin"
+          >
             <img src={LinkedIn} alt="LinkedIn"></img>
           </a>
-            <img src={Instagram} alt="Instagram"></img>
+          <img src={Instagram} alt="Instagram"></img>
         </div>
       </div>
       <div className="i-right">
         <img src={Vector1} alt="Vector1"></img>
         <img src={Vector2} alt="Vector2"></img>
         <img src={Boy} alt="Boy"></img>
-        <img src={Glassesimoji} alt="Glassesemoji"/>
-        <div style={{top:"-4%",left:"68%"}}>
-         <FloatingDIv image={Crown} txt1={"MERN Stack"} txt2={"Developer"}/> 
+        <img src={Glassesimoji} alt="Glassesemoji" />
+        <div style={{ top: "-4%", left: "68%" }}>
+          <FloatingDIv image={Crown} txt1={"MERN Stack"} txt2={"Developer"} />
         </div>
-        <div style={{top:"18rem",left:'-2rem'}}>
-          <FloatingDIv image={Thumbup} txt1="Best Design" txt2="Award"/>
+        <div style={{ top: "18rem", left: "-2rem" }}>
+          <FloatingDIv image={Thumbup} txt1="Best Design" txt2="Award" />
         </div>
         {/* {Blr Divs} */}
-        <div className="blur" style={{background:"rgb(238 210 255)" }}></div>
-         </div>
+        <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
+        <div
+        className="blur"
+        style={{
+          background: "#C1F5FF",
+          top: "17rem",
+          width: "21rem",
+          height: "11rem",
+          left: "-9rem",
+        }}
+      ></div>
+      </div>
+      
     </div>
   );
 };
