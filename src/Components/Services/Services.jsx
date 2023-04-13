@@ -62,7 +62,7 @@ const Services = () => {
             detail={"Figma, Sketch, Photoshop, Adobe, Adobe xd "}
           />
         </div>
-        <div className="blur s-blur2" style={{background:"var(--purple)"}}></div>
+        <div className="blur s-blur2 " style={{background:"var(--purple)"}}></div>
       </div>
     </div>
   );
