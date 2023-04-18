@@ -6,6 +6,8 @@ import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
 import Fitnfit from "../../img/Fitnfit.png";
+import Ecommerce1 from "../../img/Ecommerce1.jpg";
+import Mystore from "../../img/mystore.png";
 import 'swiper/css';
 const Portfolio = () => {
   return (
@@ -31,6 +33,12 @@ const Portfolio = () => {
 </SwiperSlide>
 <SwiperSlide>
     <img src={Fitnfit} alt='{Fitnfit'></img>
+</SwiperSlide>
+<SwiperSlide>
+    <img src={Ecommerce1} alt='Ecommerce1'></img>
+</SwiperSlide>
+<SwiperSlide>
+    <img src={Mystore} alt='Mystore'></img>
 </SwiperSlide>
         </Swiper>
         </div>
