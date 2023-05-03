@@ -9,11 +9,15 @@ import Fitnfit from "../../img/Fitnfit.png";
 import Ecommerce1 from "../../img/Ecommerce1.jpg";
 import Mystore from "../../img/mystore.png";
 import 'swiper/css';
+import { themeContext } from "../../Context";
+import { useContext } from "react";
 const Portfolio = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
   return (
     <div className="portfolio">
         {/* Heading  */}
-        <span>Recent Projects</span>
+        <span  style={{color:darkMode? "white" : ""}}>Recent Projects</span>
         <span>Portfolio</span>
 
         {/*  Slider  */}
