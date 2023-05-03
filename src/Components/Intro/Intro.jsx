@@ -10,12 +10,16 @@ import Thumbup from "../../img/thumbup.png";
 import Crown from "../../img/crown.png";
 import Glassesimoji from "../../img/glassesimoji.png";
 import FloatingDIv from "../FloatingDiv/FloatingDIv";
+import { themeContext } from "../../Context";
+import { useContext } from "react";
 const Intro = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span>Hy! I Am</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span>Zeeshan Haider</span>
           <span>
             MERN Stack Developer with high level of experience in web designing
@@ -55,17 +59,16 @@ const Intro = () => {
         {/* {Blr Divs} */}
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div
-        className="blur"
-        style={{
-          background: "#C1F5FF",
-          top: "17rem",
-          width: "21rem",
-          height: "11rem",
-          left: "-9rem",
-        }}
-      ></div>
+          className="blur"
+          style={{
+            background: "#C1F5FF",
+            top: "17rem",
+            width: "21rem",
+            height: "11rem",
+            left: "-9rem",
+          }}
+        ></div>
       </div>
-      
     </div>
   );
 };
