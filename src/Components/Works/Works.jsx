@@ -8,6 +8,7 @@ import Facebook from "../../img/Facebook.png";
 import "../Services/Services.css";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
+import { motion } from "framer-motion";
 const Works = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -40,8 +41,12 @@ const Works = () => {
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* Right Side */}
-      <div className="w-right">
-        <div className="w-mainCircle">
+      <div
+      className="w-right">
+        <motion.div  initial={{rotate:45}}
+      whileInView={{rotate:0}}
+      viewport={{margin:"-40px"}}
+      transition={{duration:3.5,type:"spring"}} className="w-mainCircle">
           <div className="w-secCircle">
             <img src={Upwork} alt="Upwork" />
           </div>
@@ -57,7 +62,7 @@ const Works = () => {
           <div className="w-secCircle">
             <img src={Facebook} alt="Facebook" />
           </div>
-        </div>
+        </motion.div >
         {/* background circles */}
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>

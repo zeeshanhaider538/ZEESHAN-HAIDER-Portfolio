@@ -7,11 +7,13 @@ import Card from "../Card/Card";
 import Resume from "./ZEESHAN HAIDER.pdf";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
+import { motion } from "framer-motion";
 const Services = () => {
+  const transition={duration:1,type:"spring"  }
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="services">
+    <div className="services" id="Services">
       {/* left side */}
       <div className="awesome">
         <span style={{color:darkMode? "white" : ""}}>My Awesome</span>
@@ -43,29 +45,37 @@ const Services = () => {
       {/* right side  */}
       <div className="cards">
         {/* first card */}
-        <div style={{ left: "14rem" }}>
+        <motion.div  
+        whileInView={{left:"14rem"}}
+        initial={{left:"25rem"}}
+        transition={transition}
+        style={{ left: "14rem" }}>
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
             detail={"Figma, Sketch, Photoshop, Adobe, Adobe xd "}
           />
-        </div>
+        </motion.div >
         {/* Second Card */}
         <div style={{ left: "-4rem", top: "15rem" }}>
           <Card
             emoji={Glasses}
             heading={"Developer"}
-            detail={"HTML, CSS, JavaScript, React,Next.Js"}
+            detail={"HTML, CSS, JavaScript, React, Next.Js, Node.js, MongoDB, Express,"}
           />
         </div>
         {/* Third Card */}
-        <div style={{ top: "19rem", left: "12rem" }}>
+        <motion.div 
+         whileInView={{left:"12rem"}}
+         initial={{left:"25rem"}}
+         transition={transition}
+         style={{ top: "19rem", left: "12rem" }}>
           <Card
             emoji={Humble}
             heading={"UI/UX"}
             detail={"Figma, Sketch, Photoshop, Adobe, Adobe xd "}
           />
-        </div>
+        </motion.div>
         <div className="blur s-blur2 " style={{background:"var(--purple)"}}></div>
       </div>
     </div>
